@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/name_add"
+        android:hint="请输入学生名称"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/insert"
+        android:text="插入一个学生" 
+        />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/id"
+        android:hint="请输入学生id"/>
+    
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/name_update"
+        android:hint="请输入学生要更新的姓名"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:text="更新一个学生姓名" 
+        />
+        
+    </LinearLayout> 
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:text="查询所有学生"/>
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_table"
+        android:text="删除表"/>
+    
+</LinearLayout>
