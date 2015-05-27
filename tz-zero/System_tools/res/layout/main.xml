@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phonenum" />
+
+    <EditText
+        android:id="@+id/phonecontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phonecon" />
+
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sendsms" />
+
+    <Button
+        android:id="@+id/callphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/callphone" />
+
+    <Button
+        android:id="@+id/printlog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/printlog" />
+
+</LinearLayout>
