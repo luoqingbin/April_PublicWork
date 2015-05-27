@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <Button
+        android:id="@+id/btn_create_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建数据库及学生信息数据库表" />
+    
+     <Button
+        android:id="@+id/btn_addstu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加学生信息" />
+     
+     <Button
+        android:id="@+id/btn_deletestu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除学生信息" />
+     
+     <Button
+        android:id="@+id/btn_updatestu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新学生信息" />
+     
+     <Button
+        android:id="@+id/btn_querystu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询指定学生信息" />
+     
+     <Button
+        android:id="@+id/btn_querystus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询所有学生信息" />
+
+</LinearLayout>
