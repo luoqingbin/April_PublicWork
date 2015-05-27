@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+    <student>
+        <name>凌江林</name>
+        <age>25</age>
+        <sex>男</sex>
+    </student>
+    <student>
+        <name>老崔</name>
+        <age>25</age>
+        <sex>男</sex>
+    </student>
+    <student>
+        <name>小惠</name>
+        <age>24</age>
+        <sex>女</sex>
+    </student>
+    <student>
+        <name>小辛</name>
+        <age>26</age>
+        <sex>男</sex>
+    </student>
+</students>

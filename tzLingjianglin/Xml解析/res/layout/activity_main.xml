@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+	<Button
+	    android:id="@+id/pull"
+	    android:layout_marginTop="20dp"  
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="pull方式解析xml"/>
+	<Button
+	    android:id="@+id/sax" 
+	    android:layout_marginTop="20dp" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="sax方式解析xml"/>
+	<Button
+	    android:id="@+id/dom"
+	    android:layout_marginTop="20dp" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Dom方式解析xml"/>
+
+</LinearLayout>
