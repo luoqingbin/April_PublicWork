@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/version"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="1"/>
+    <EditText
+        android:id="@+id/et_bean"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入类名，例如：Student"/>
+    <Button 
+        android:id="@+id/insertData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="插入数据"
+        android:onClick="insertData"/>
+    <Button 
+        android:id="@+id/queryData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据"
+        android:onClick="queryData"/>
+    
+
+</LinearLayout>
