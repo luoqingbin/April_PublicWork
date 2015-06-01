@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orm tableName="products" beanName="com.tz.database.bean.Product" daoName="com.tz.database.dao.ProductDao">
+   <key column="_pid" property="proId" type="java.lang.Integer" identity="true"></key>
+   <item column="productName" property="proName" type="java.lang.String"></item>
+   <item column="price" property="proPrice" type="java.lang.Float"></item>
+</orm>

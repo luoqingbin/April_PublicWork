@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orm tableName="students" beanName="com.tz.database.bean.Student" daoName="com.tz.database.dao.StudentDao">
+   <key column="_sid" property="stuId" type="java.lang.Integer" identity="true"></key>
+   <item column="name" property="stuname" type="java.lang.String"></item>
+   <item column="classname" property="stuclassname" type="java.lang.String"></item>
+</orm>

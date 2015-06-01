@@ -1,6 +1,6 @@
 package com.yangfp.cursoradapter;
 
-import com.yangfp.cursoradapter.adaoter.MyCursorAdapter;
+import com.yangfp.cursoradapter.adapter.MyCursorAdapter;
 import com.yangfp.cursoradapter.utils.MySQLiteHelper;
 
 import android.app.Activity;
@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.widget.AutoCompleteTextView;
 
 public class MainActivity extends Activity implements TextWatcher {
@@ -35,46 +36,50 @@ public class MainActivity extends Activity implements TextWatcher {
     }
 
     /**
-     * 输入前调用
+     * 值改变前调用
      */
 	public void beforeTextChanged(CharSequence s, int start, int count,
 			int after) {
-		// TODO Auto-generated method stub
-		
+		Log.i("INFO", "beforeTextChanged:   "+"s:"+s+"start:"+start+"count:"+count+"after:"+after);
 	}
 
 	/**
-	 * 输入中调用
+	 * 值改变中调用
 	 */
 	public void onTextChanged(CharSequence s, int start, int before, int count) {
-		// TODO Auto-generated method stub
+		Log.i("INFO", "onTextChanged:   "+"s:"+s+"start:"+start+"before:"+before+"count:"+count);
 		
-	}
-
-	/**
-	 * 输入完成后调用
-	 */
-	public void afterTextChanged(Editable s) {
 		String text = actv.getText().toString().trim();
 		if(!"".equals(text)){
-			cursor = db.rawQuery("select * from words where word like ?", new String[]{actv.getText()+"%"});
+			cursor = db.rawQuery("select * from words where word like ?", new String[]{text+"%"});
 			
 			MyCursorAdapter cursorAdapter = new MyCursorAdapter(this, cursor,true, "word");
 			actv.setAdapter(cursorAdapter);
 		}
+	}
+
+	/**
+	 * 值改变后调用
+	 */
+	public void afterTextChanged(Editable s) {
+		Log.i("INFO", "afterTextChanged:   "+"s:"+s);
 	}
 	
 	@Override
 	protected void onStop() {
 		// TODO Auto-generated method stub
 		super.onStop();
-		cursor.close();//关闭游标
+		if(cursor!=null){
+			cursor.close();//关闭游标
+		}
 	}
 	
 	@Override
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		super.onDestroy();
-		db.close();//关闭数据库连接
+		if(db!=null){
+			db.close();//关闭数据库连接
+		}
 	}
 }

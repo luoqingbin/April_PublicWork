@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<orm beanName="com.task.sqlite.bean.Student" tableName="student">
+    <key columnName="_id" property="_id" type="java.lang.Integer" identity="true"></key>
+    <item columnName="name" property="name" type="java.lang.String"></item>
+    <item columnName="sex" property="sex" type="java.lang.String"></item>
+    <item columnName="phone" property="phone" type="java.lang.String"></item>
+</orm>
