@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">tz_contentprovider</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="show_music">显示音乐文件到sdcard</string>
+    <string name="insertortrans">用事务插入表</string>
+    <string name="insert">插入</string>
+    <string name="select">查询</string>
+
+</resources>
